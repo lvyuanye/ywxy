@@ -81,7 +81,7 @@ let g:airline_powerline_fonts = 1
 " 开启tabline
 let g:airline#extensions#tabline#enabled = 1
 " tabline中当前buffer两端的分隔字符
-let g:airline#extensions#tabline#left_sep = '◤'
+let g:airline#extensions#tabline#left_sep = '◣'
 " tabline中未激活buffer两端的分隔字符
 let g:airline#extensions#tabline#left_alt_sep = '◤'
 " tabline中buffer显示编号
@@ -237,7 +237,7 @@ set foldmethod=syntax
 ""5. diff   //对没有更改的文本进行折叠
 ""6. marker //用标志折叠
 set foldlevel=3 
-set foldlevelstart=99       " 打开文件是默认不折叠代码
+set foldlevelstart=99       " 打开文件时默认不折叠代码
 set foldenable              " 开始折叠
 " 不要使用vi的键盘模式，而是vim自己的
 set nocompatible

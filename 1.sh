@@ -15,7 +15,9 @@ export PATH
 
 #安装Vundle（vim插件）
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
-
 vim +PluginInstall +qall;
 
-
+sudo apt install samba-common-bin
+sudo mkdir /var/lib/samba/usershares
+ln -s ~/bin/.vimrc ~/.vimrc
+echo "source ~/bin/bashrc" >> ~/.bashrc
