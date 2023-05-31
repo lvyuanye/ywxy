@@ -163,7 +163,7 @@ alias rkx11="make ARCH=arm64 BOOT_IMG=../rockdev/Image-rkx11_3399_64_q/boot.img 
 
 alias jkill="bash ~/bin/jlink_kill.sh " 
 export PS1='\[\e[32;1m\]\u\[\e[32;1m\][\[\e[33;1m\]\A\[\e[32;1m\]]\[\e[35;1m\]:\[\e[34;1m\]\w\[\e[37;1m\]\$\[\e[m\] '"\[\033]0;\W\007\]"
-
+alias treew="tree -fplaDF"
 export PATH=~/.local/bin:$PATH
 alias jrkcameraname='adb shell "grep '' /sys/class/video4linux//video*/name"'
 export LIBDIR=~/bin:$LIBDIR

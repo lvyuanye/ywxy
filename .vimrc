@@ -129,6 +129,7 @@ Plugin 'The-NERD-tree'
 "NERDTree 配置:F2快捷键显示当前目录树
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeWinSize=25 
+let NERDTreeShowHidden=1
  
 Plugin 'indentLine.vim'
 Plugin 'delimitMate.vim'
