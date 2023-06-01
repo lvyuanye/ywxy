@@ -133,7 +133,15 @@ let NERDTreeShowHidden=1
  
 Plugin 'indentLine.vim'
 Plugin 'delimitMate.vim'
- 
+" Plugin 'kshenoy/vim-signature'
+Plugin 'mark'
+
+" 批量注释插件
+Plugin 'scrooloose/nerdcommenter'
+" 注释的时候自动加个空格, 强迫症必配
+let g:NERDSpaceDelims=1
+
+
 " 非 github 仓库的插件"
 " Plugin 'git://git.wincent.com/command-t.git'
 " 本地仓库的插件 "
@@ -267,7 +275,9 @@ set history=1000
 set nobackup
 set noswapfile
 "搜索忽略大小写
-set ignorecase
+"set ignorecase
+"只有在输入的字符中有大写才启用大小写敏感，否则就是大小写不敏感。
+set smartcase
 "搜索逐字符高亮
 set hlsearch
 set incsearch

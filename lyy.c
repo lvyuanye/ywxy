@@ -1,16 +1,24 @@
-##########################################################################
-# File Name: lyy.sh
-# Author: lvyuanye
-# mail: 1349746865@qq.com
-# Created Time: 2023年02月02日 星期四 09时54分41秒
-#########################################################################
-#!/bin/zsh
-PATH=/home/edison/bin:/home/edison/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/work/tools/gcc-3.4.5-glibc-2.3.6/bin
-export PATH
+/*************************************************************************
+	> File Name: lyy.c
+	> Author: lvyuanye
+	> Mail: 1349746865@qq.com
+	> Created Time: 2023年06月01日 星期四 10时00分15秒
+ ************************************************************************/
 
-//	if("nautilus ." == Nautilus-Share-Message: 09:48:07.220: Called "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)){
+#include<stdio.h>
+
+//	if("nautilus ." == Nautilus-Share-Message: 09:48:07.220: Called "net usershare info" but
+//				it failed: Failed to execute child process “net” (No such file or directory)){
 //		sudo apt install samba-common-bin
 //		sudo mkdir /var/lib/samba/usershares
 //	}
 
+//	main(_){_^448&&main(-~_);putchar(--_%64?32|-~7[__TIME__-_/8%8][">'txiZ^(~z?"-48]>>";;;====~$::199"[_*2&8|_/64]/(_&2?1:8)%8&1:10);}
 
+int main(void)
+{
+//	int i;
+
+	printf("this is %s_%s_%d:\n",__FILE__,__func__,__LINE__);
+	return 0;
+}
