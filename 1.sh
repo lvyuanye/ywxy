@@ -17,7 +17,8 @@ export PATH
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
 vim +PluginInstall +qall;
 
-sudo apt install samba-common-bin
+(echo "Y") | sudo apt install samba-common-bin
 sudo mkdir /var/lib/samba/usershares
+
 ln -s ~/bin/.vimrc ~/.vimrc
 echo "source ~/bin/bashrc" >> ~/.bashrc

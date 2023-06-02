@@ -138,8 +138,22 @@ Plugin 'mark'
 
 " 批量注释插件
 Plugin 'scrooloose/nerdcommenter'
-" 注释的时候自动加个空格, 强迫症必配
-let g:NERDSpaceDelims=1
+" 默认情况下，在注释分隔符后添加空格
+let g:NERDSpaceDelims = 1
+" 对美化的多行注释使用压缩语法(貌似这个没什么卵用)
+let g:NERDCompactSexyComs = 1
+" 按行对齐注释分隔符左对齐，而不是按代码缩进
+let g:NERDDefaultAlign = 'left'
+" 默认情况下，将语言设置为使用其备用分隔符（不是很明白所以忽略）
+let g:NERDAltDelims_java = 1
+" 添加您自己的自定义格式或覆盖默认格式（你懂的）
+let g:NERDCustomDelimiters = { 'php': { 'left': '/*','right': '*/' },'html': { 'left': '<!--','right': '-->' },'py': { 'left': '#' },'sh': { 'left': '#' },'c': { 'left': '//' },'dts': { 'left': '//' },'dtsi': { 'left': '//' } }
+" 允许注释和反转空行（在注释区域时很有用） （没亲测）
+let g:NERDCommentEmptyLines = 1
+" 取消注释时启用尾随空白的修剪
+let g:NERDTrimTrailingWhitespace = 1
+" 启用nerdcommenttoggle检查是否对所有选定行进行了注释
+let g:NERDToggleCheckAllLines = 1
 
 
 " 非 github 仓库的插件"
