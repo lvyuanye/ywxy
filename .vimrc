@@ -33,8 +33,28 @@ let g:ycm_min_num_of_chars_for_completion=2                 " 从第2个键入�
  
 " github 仓库中的插件 "
 Plugin 'VundleVim/Vundle.vim'
-""Plugin 'obcat/vim-sclow'
- 
+Plugin 'obcat/vim-sclow'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'airblade/vim-gitgutter'
+" vim-gitgutter used to do this by default:
+highlight! link SignColumn LineNr
+" or you could do this:
+highlight SignColumn guibg=NONE ctermbg=black
+" Vim 7.4.2201
+set signcolumn=yes
+let g:gitgutter_sign_allow_clobber = 1
+let g:gitgutter_set_sign_backgrounds = 1
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+let g:gitgutter_sign_added = 'A'
+let g:gitgutter_sign_modified = 'M'
+let g:gitgutter_sign_removed = 'D'
+let g:gitgutter_sign_removed_first_line = '^'
+let g:gitgutter_sign_removed_above_and_below = '{'
+let g:gitgutter_sign_modified_removed = 'w'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""Plugin 'itchyny/lightline.vim'
