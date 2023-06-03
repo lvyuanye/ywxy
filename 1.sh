@@ -13,8 +13,12 @@ export PATH
 (echo "Y") | sudo apt-get install gcc-arm-linux-gnueabihf;
 (echo "Y") | sudo apt-get install g++-arm-linux-gnueabihf;
 
+# nerd 字体
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/fonts/nerd-fonts
+bash ~/fonts/nerd-fonts/install.sh
+
 #安装Vundle（vim插件）
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
+git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
 vim +PluginInstall +qall;
 
 (echo "Y") | sudo apt install samba-common-bin
