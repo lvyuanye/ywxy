@@ -24,5 +24,5 @@ vim +PluginInstall +qall;
 (echo "Y") | sudo apt install samba-common-bin
 sudo mkdir /var/lib/samba/usershares
 
-ln -s ~/bin/.vimrc ~/.vimrc
-echo "source ~/bin/bashrc" >> ~/.bashrc
+ln -s ~/ywxy/.vimrc ~/.vimrc
+echo "source ~/ywxy/bashrc" >> ~/.bashrc
