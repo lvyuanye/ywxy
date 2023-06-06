@@ -21,6 +21,7 @@ bash ~/fonts/nerd-fonts/install.sh
 git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
 vim +PluginInstall +qall;
 
+(echo "Y") | sudo apt-get install cmake
 (echo "Y") | sudo apt install samba-common-bin
 sudo mkdir /var/lib/samba/usershares
 

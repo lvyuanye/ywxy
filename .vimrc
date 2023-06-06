@@ -120,9 +120,9 @@ map <leader>7 :b 7<CR>
 map <leader>8 :b 8<CR>
 map <leader>9 :b 9<CR>
 Plugin 'vim-airline-themes'
-let g:airline_theme='powerlineish'
+" let g:airline_theme='powerlineish'
 "let g:airline_theme='dark'
-"let g:airline_theme='bubblegum'
+let g:airline_theme='bubblegum'
 "let g:airline_theme='solarized'
 "let g:airline_left_sep = '⮀'
 "let g:airline_left_alt_sep = '⮁'
