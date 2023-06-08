@@ -155,7 +155,12 @@ export PATH=~/ywxy:$PATH
 # alias bpull='git pull origin master'
 # alias clogcat='coloredlogcat.py '
 
-alias cd11="cd ~/code/rk356x/"
+alias cplog="source ~/.bashrc;cp logkermitdef log_`date +%Y%m%d_%H%M%S`"
+alias cplogt="cp logkermitdef log_temp"
+
+alias cd10="cd ~/6tcode/rk3399_q0_dev/"
+alias cd11="cd ~/6tcode/RKG185/"
+alias cd12="cd ~/6tcode/A12/"
 alias c...="cd ../../../"
 alias c..="cd ../../"
 alias c....="cd ../../../../"

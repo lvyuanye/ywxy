@@ -6,7 +6,7 @@ call vundle#begin()
  
  
 " 这里根据自己需要的插件来设置，以下是我的配置 "
-"
+
 " YouCompleteMe:语句补全插件
 Plugin 'Valloric/YouCompleteMe'
 set runtimepath+=~/.vim/bundle/YouCompleteMe
@@ -27,13 +27,13 @@ let g:ycm_show_diagnostics_ui = 0                           " 禁用语法检查
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"             " 回车即选中当前项
 nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>     " 跳转到定义处
 let g:ycm_min_num_of_chars_for_completion=2                 " 从第2个键入字符就开始罗列匹配项
-"
+
  
  
  
 " github 仓库中的插件 "
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'obcat/vim-sclow'
+" Plugin 'obcat/vim-sclow'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'airblade/vim-gitgutter'
 " vim-gitgutter used to do this by default:
@@ -119,17 +119,6 @@ map <leader>6 :b 6<CR>
 map <leader>7 :b 7<CR>
 map <leader>8 :b 8<CR>
 map <leader>9 :b 9<CR>
-Plugin 'vim-airline-themes'
-" let g:airline_theme='powerlineish'
-"let g:airline_theme='dark'
-let g:airline_theme='bubblegum'
-"let g:airline_theme='solarized'
-"let g:airline_left_sep = '⮀'
-"let g:airline_left_alt_sep = '⮁'
-"let g:airline_right_sep = '⮂'
-"let g:airline_right_alt_sep = '⮃'
-"let g:airline_symbols.branch = '⭠'
-"let g:airline_symbols.readonly = '⭤'
 
 Plugin 'ryanoasis/vim-devicons'
  
@@ -198,7 +187,7 @@ func SetTitle()
 		call append(line(".")+3, "# Created Time: ".strftime("%c")) 
 		call append(line(".")+4, "#########################################################################") 
 		call append(line(".")+5, "#!/bin/zsh")
-		call append(line(".")+6, "PATH=/home/edison/bin:/home/edison/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/work/tools/gcc-3.4.5-glibc-2.3.6/bin")
+		" call append(line(".")+6, "PATH=/home/$(whoami)/bin:/$(whoami)/edison/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/work/tools/gcc-3.4.5-glibc-2.3.6/bin")
 		call append(line(".")+7, "export PATH")
 		call append(line(".")+8, "")
 	else 
@@ -238,7 +227,7 @@ map <C-A> ggVGY
 map! <C-A> <Esc>ggVGY
 map <F12> gg=G
 " 选中状态下 Ctrl+c 复制
-vmap <C-c> "+y
+vmap <C-C> "+y
  
  
  

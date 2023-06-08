@@ -13,9 +13,8 @@ export PATH
 (echo "Y") | sudo apt-get install gcc-arm-linux-gnueabihf;
 (echo "Y") | sudo apt-get install g++-arm-linux-gnueabihf;
 
-# nerd 字体
-git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/fonts/nerd-fonts
-bash ~/fonts/nerd-fonts/install.sh
+(echo "Y") | sudo apt-get install vim
+(echo "Y") | sudo apt-get install ctags
 
 #安装Vundle（vim插件）
 git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
@@ -27,3 +26,7 @@ sudo mkdir /var/lib/samba/usershares
 
 ln -s ~/ywxy/.vimrc ~/.vimrc
 echo "source ~/ywxy/bashrc" >> ~/.bashrc
+
+# nerd 字体 内容较大，放到最后下载
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/fonts/nerd-fonts
+bash ~/fonts/nerd-fonts/install.sh
