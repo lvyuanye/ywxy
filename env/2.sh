@@ -49,6 +49,8 @@ sudo pip install xlutils
 
 
 
+(echo "Y") |sudo apt-get install tree
+(echo "Y") |sudo apt-get install fastboot
 (echo "Y") |sudo apt-get install gitk silversearcher-ag
 (echo "Y") |sudo apt-get install ctags cscope ckermit qt4* libqtwebkit-dev libxrender-dev
 
@@ -62,11 +64,6 @@ gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['GB180
 #sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 50
 #sudo update-alternatives --install /usr/bin/cpp cpp-bin /usr/bin/cpp-4.4 100
 #sudo update-alternatives --install /usr/bin/cpp cpp-bin /usr/bin/cpp-4.6 50
-
-
-
-
-
 #dpkg --get-selections  | grep linux
 #(echo "Y") | sudo apt-get install linux-modules-extra-4.15.0-38-generic
 #(echo "Y") | sudo apt-get install linux-headers-4.15.0-38-generic
@@ -74,7 +71,6 @@ gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['GB180
 
 
 (echo "Y") | sudo pip install pyinstaller
-
 (echo "Y") | sudo apt-get install qt4-dev-tools qt4-doc qt4-qtconfig qt4-demos qt4-designer libqwt5-qt4 libqwt5-qt4-dev 
 
 (echo "Y") |pip install python-jenkins
@@ -88,10 +84,6 @@ gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['GB180
 (echo "Y") |sudo apt install libssl-dev vim
 (echo "Y") |sudo apt-get install ctags cscope
 (echo "Y") |sudo apt-get install scrcpy
-
-
-sudo rm /bin/sh
-sudo ln -s /bin/bash /bin/sh #//for v55 bootloader build on ub2004
 (echo "Y") |sudo apt install libssl-dev
 pip install pyelftools #for rk3566 r
 (echo "Y") |sudo apt-get install device-tree-compiler
