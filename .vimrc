@@ -187,7 +187,7 @@ func SetTitle()
 		call append(line(".")+3, "# Created Time: ".strftime("%c")) 
 		call append(line(".")+4, "#########################################################################") 
 		call append(line(".")+5, "#!/bin/zsh")
-		" call append(line(".")+6, "PATH=/home/$(whoami)/bin:/$(whoami)/edison/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/work/tools/gcc-3.4.5-glibc-2.3.6/bin")
+		call append(line(".")+6, "PATH=/home/lyy/bin:/home/lyy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/work/tools/gcc-3.4.5-glibc-2.3.6/bin")
 		call append(line(".")+7, "export PATH")
 		call append(line(".")+8, "")
 	else 

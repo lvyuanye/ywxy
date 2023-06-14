@@ -89,6 +89,10 @@ pip install pyelftools #for rk3566 r
 (echo "Y") |sudo apt-get install device-tree-compiler
 (echo "Y") |sudo apt-get install liblz4-tool net-tools gparted
 
+# 压缩和解压rar文件
+(echo "Y") | sudo apt-get install rar
+(echo "Y") | sudo apt-get install unrar
+
 #no in 2004
 
 #ckermit
