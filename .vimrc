@@ -33,7 +33,11 @@ let g:ycm_min_num_of_chars_for_completion=2                 " 从第2个键入�
  
 " github 仓库中的插件 "
 Plugin 'VundleVim/Vundle.vim'
-" Plugin 'obcat/vim-sclow'
+" 基于文本的滚动条
+Plugin 'obcat/vim-sclow'
+" 搜索结果统计
+" Plugin 'google/vim-searchindex'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'airblade/vim-gitgutter'
 " vim-gitgutter used to do this by default:
@@ -228,7 +232,8 @@ map! <C-A> <Esc>ggVGY
 map <F12> gg=G
 " 选中状态下 Ctrl+c 复制
 vmap <C-C> "+y
- 
+map vc ebve"+y
+map <leader>v ebve
  
  
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -298,7 +303,7 @@ set history=1000
 set nobackup
 set noswapfile
 "搜索忽略大小写
-"set ignorecase
+set ignorecase
 "只有在输入的字符中有大写才启用大小写敏感，否则就是大小写不敏感。
 set smartcase
 "搜索逐字符高亮
@@ -352,6 +357,8 @@ set showmatch
 set matchtime=1
 " 光标移动到buffer的顶部和底部时保持3行距离
 set scrolloff=3
+" 显示搜索统计
+set shortmess-=S
 " 为C程序提供自动缩进
 set smartindent
 " 高亮显示普通txt文件（需要txt.vim脚本）

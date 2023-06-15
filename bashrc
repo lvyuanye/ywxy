@@ -157,6 +157,7 @@ export PATH=~/ywxy:$PATH
 
 alias cplog="source ~/.bashrc;cp logkermitdef log_`date +%Y%m%d_%H%M%S`"
 alias cplogt="cp logkermitdef log_temp"
+alias gitc="git checkout -f;git clean -df"
 
 alias jupgrade_tool="./rkbin/tools/upgrade_tool"
 alias cd10="cd ~/6tcode/rk3399_q0_dev/"
