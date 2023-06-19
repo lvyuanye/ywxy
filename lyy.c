@@ -22,3 +22,7 @@ int main(void)
 	printf("this is %s_%s_%d:\n",__FILE__,__func__,__LINE__);
 	return 0;
 }
+
+//	(っ'-')╮ =͟͟͞͞○͟͟͞͞○
+
+
