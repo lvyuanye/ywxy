@@ -16,18 +16,21 @@ export PATH
 (echo "Y") | sudo apt-get install vim
 (echo "Y") | sudo apt-get install ctags
 (echo "Y") | sudo apt-get install exuberant-ctags
-
-#安装Vundle（vim插件）
-git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
-vim +PluginInstall +qall;
-
 (echo "Y") | sudo apt-get install cmake
 (echo "Y") | sudo apt install samba-common-bin
 sudo mkdir /var/lib/samba/usershares
 
-ln -s ~/.vimrc ~/ywxy/.vimrc
-echo "source ~/ywxy/bashrc" >> ~/.bashrc
+#安装Vundle（vim插件）
+ln -s ~/ywxy/.vimrc ~/.vimrc
+if [ -s ~/.vimrc ];then
+	echo ".vimrc creat success!"
+else
+	echo "ERROR: .vimrc is not exist! you may should try : ln -s ~/vimrc ~/ywxy/.vimrc"
+fi
+git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
+vim +PluginInstall +qall;
 
 # nerd 字体 内容较大，放到最后下载
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/fonts/nerd-fonts
 bash ~/fonts/nerd-fonts/install.sh
+echo "source ~/ywxy/bashrc" >> ~/.bashrc

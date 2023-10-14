@@ -1,7 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
 #add for ubuntu 1804 local install
-export PATH=~/ywxy:$PATH
+export PATH=~/ywxy:~/bin/:$PATH
 
 #export PATH=~/all_codes/my_codes/myqq_python/dev_tools/depot_tools:~/bin:~/bin/images:~/bin/SignTool:$PATH
 #export PATH=/home/manjusaka/all_codes/mtk6572/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6/bin:$PATH
