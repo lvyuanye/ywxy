@@ -1,4 +1,4 @@
-sudo add-apt-repository universe
+(echo "Y") | sudo add-apt-repository universe
 (echo "Y") | sudo apt install python2
 (echo "Y") | sudo apt install python3
 (echo "Y") | sudo apt install python3.10-dev
