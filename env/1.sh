@@ -34,3 +34,7 @@ vim +PluginInstall +qall;
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/fonts/nerd-fonts
 bash ~/fonts/nerd-fonts/install.sh
 echo "source ~/ywxy/bashrc" >> ~/.bashrc
+
+# 运行"./6_1_python2.sh"安装python,并编译YCM
+bash ./6_1_python2.sh
+/usr/bin/python3.10 ~/.vim/bundle/YouCompleteMe/install.py
