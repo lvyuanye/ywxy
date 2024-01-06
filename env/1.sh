@@ -23,10 +23,15 @@ sudo mkdir /var/lib/samba/usershares
 #安装Vundle（vim插件）
 ln -s ~/ywxy/.vimrc ~/.vimrc
 if [ -s ~/.vimrc ];then
-	echo ".vimrc creat success!"
+	echo -e "\e[32m.vimrc creat success! \e[m"
 else
-	echo "ERROR: .vimrc is not exist! you may should try : ln -s ~/vimrc ~/ywxy/.vimrc"
+	echo -e "\e[31mERROR: .vimrc is not exist! \e[m"
 fi
+
+git config --global user.name "lvyuanye"
+git config --global user.email "1349746865@qq.com"
+git config http.postBuffer 524288000
+
 git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
 vim +PluginInstall +qall;
 
