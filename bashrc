@@ -154,7 +154,7 @@ export PATH=~/ywxy:~/bin/:$PATH
 # alias jrepo="repo init -u git@192.168.8.204:alps/manifest.git -m "
 # alias bpull='git pull origin master'
 # alias clogcat='coloredlogcat.py '
-
+set -o vi
 alias cplog="source ~/.bashrc;cp logkermitdef log_`date +%Y%m%d_%H%M%S`"
 alias cplogt="cp logkermitdef log_temp"
 alias gitc="git checkout -f;git clean -df"
