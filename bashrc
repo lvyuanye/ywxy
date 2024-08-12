@@ -157,7 +157,8 @@ export PATH=~/ywxy:~/bin/:$PATH
 set -o vi
 alias cplog="source ~/.bashrc;cp logkermitdef log_`date +%Y%m%d_%H%M%S`"
 alias cplogt="cp logkermitdef log_temp"
-alias gitc="git checkout -f;git clean -df"
+alias gitc="git checkout .;git clean -df"
+alias gitcc="git checkout -f;git clean -df;git pull"
 
 alias jupgrade_tool="./rkbin/tools/upgrade_tool"
 alias cd10="cd ~/6tcode/rk3399_q0_dev/"
@@ -177,7 +178,10 @@ alias reposync='cd version_babyd; git fetch --tags --force; cd -;repo forall -c 
 alias jbuild='cd /home/bsp/all_codes/up0_mtk6762/jlink/version_integration/bsp/tools/build; python t4_main.py;'
 alias jmbuild='cd /home/manjusaka/all_codes/up0_mtk6762/jlink/version_integration/bsp/tools/build; python t4_main.py;'
 alias jlog="adb shell uptime; adb root; adb shell cat /proc/cmdline; adb shell cat /proc/last_kmsg"
-alias jjs="source build/envsetup.sh"
+alias jjs="source build/envsetup.sh;lunch "
+alias ccs="source ebsw_select.sh;source build/envsetup.sh;lunch "
+alias mcbA="echo 'GIT_COMMIT=\`git log --date=format:\"%y%m%d_%H%M\" --format=\"%h-%ad\" -1\`' >> build.sh;echo 'mv \$STUB_PATH/build_cmd_info.txt \$STUB_PATH/\$GIT_COMMIT.txt' >> build.sh;make installclean;./build.sh -Aup -J32 2>&1 | tee bu.log"
+alias mcdA="echo 'GIT_COMMIT=\`git log --date=format:\"%y%m%d_%H%M\" --format=\"%h-%ad\" -1\`' >> build.sh;echo 'mv \$STUB_PATH/build_cmd_info.txt \$STUB_PATH/\$GIT_COMMIT.txt' >> build.sh;make installclean;./build.sh -UKCAup -J32 2>&1 | tee bu.log"
 export PS1='\[\e[32;1m\]\u\[\e[32;1m\][\[\e[33;1m\]\A\[\e[32;1m\]]\[\e[35;1m\]:\[\e[34;1m\]\w\[\e[37;1m\]\$\[\e[m\] '"\[\033]0;\W\007\]"
 alias treew="tree -fplaDF"
 #解决ls中文乱码问题
