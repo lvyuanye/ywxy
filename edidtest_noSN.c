@@ -42,13 +42,14 @@ enum {
 	IMAGE_SIZE_650,
 	IMAGE_SIZE_750,
 	IMAGE_SIZE_860,
+	IMAGE_SIZE_920,
 	IMAGE_SIZE_980,
 	IMAGE_SIZE_1050,
 
 	IMAGE_SIZE_MAX
 }image_st;
 
-uint8_t image_size[35][2] = {
+uint8_t image_size[36][2] = {
 
 	//IMAGE_SIZE_133
 	28,18,
@@ -114,9 +115,11 @@ uint8_t image_size[35][2] = {
 	165,93,
 	//IMAGE_SIZE_860,//
 	190,107,
+	//IMAGE_SIZE_920,//
+	204,115,
 	//IMAGE_SIZE_980,//
 	216,122,
-	//IMAGE_SIZE_980,//
+	//IMAGE_SIZE_1050,//
 	247,107,
 	//IMAGE_SIZE_MAX
 	93,52,
@@ -323,7 +326,7 @@ int reload_edid_bin(uint8_t *newbuf,char *pHdmiEdidFile)
 {
 	uint8_t *reload_buf = (uint8_t *) malloc(HDMI_EDID_LEN);
 
-   	FILE *pBinFile = fopen(pHdmiEdidFile, "w");
+   	FILE *pBinFile = fopen(pHdmiEdidFile, "r+");
     if(pBinFile == NULL)
     {
         printf("Failed open: fail\n");              
@@ -385,9 +388,10 @@ void printf_imagesize(void)
 	printf("30.	IMAGE_SIZE_650\n");
 	printf("31.	IMAGE_SIZE_750\n");
 	printf("32.	IMAGE_SIZE_860\n");
-	printf("33.	IMAGE_SIZE_980\n");
-	printf("34.	IMAGE_SIZE_1050\n");
-	printf("35.	IMAGE_SIZE_1100\n");
+	printf("33.	IMAGE_SIZE_920\n");
+	printf("34.	IMAGE_SIZE_980\n");
+	printf("35.	IMAGE_SIZE_1050\n");
+	printf("36.	IMAGE_SIZE_1100\n");
 }
 
 int main(int argc, char **argvv)
