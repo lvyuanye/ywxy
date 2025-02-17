@@ -17,9 +17,12 @@
 
 int main(void)
 {
-//	int i;
+	long double i = 64;
+	long double *t = &i;
 
-	printf("this is %s_%s_%d:\n",__FILE__,__func__,__LINE__);
+	printf("sizeof(i) = %ld\t %ld\t %ld\t %ld\n",sizeof(i),sizeof(&i),sizeof(*t),sizeof(t));
+
+	printf("this is %s_%s_%d_%s:\n",__FILE__,__func__,__LINE__,__TIME__);
 	return 0;
 }
 

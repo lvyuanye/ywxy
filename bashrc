@@ -201,3 +201,6 @@ alias treew="tree -fplaDF"
     export LC_MEASUREMENT=zh_CN.UTF-8
     export LC_IDENTIFICATION=zh_CN.UTF-8
     export LC_ALL=
+
+alias mcbA="echo 'GIT_COMMIT=\`git branch --format=\"%(objectname:short)-[%(committerdate:iso)]-%(refname:short)-[%(authorname)]-[%(contents:subject)]\"\`' >> build.sh;echo 'mv \$STUB_PATH/build_cmd_info.txt \$STUB_PATH/\$GIT_COMMIT.txt' >> build.sh;make installclean;./build.sh -Aup -J32 2>&1 | tee bu.log"
+alias mcdA="echo 'GIT_COMMIT=\`git branch --format=\"%(objectname:short)-[%(committerdate:iso)]-%(refname:short)-[%(authorname)]-[%(contents:subject)]\"\`' >> build.sh;echo 'mv \$STUB_PATH/build_cmd_info.txt \$STUB_PATH/\$GIT_COMMIT.txt' >> build.sh;make installclean;./build.sh -UKCAup -J32 2>&1 | tee bu.log"
